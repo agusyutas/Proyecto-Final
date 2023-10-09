@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/Img logos/logo.jpg" type="image/x-icon">
     <title>brazos</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <header>
     <nav>
         <img src="../img/Img logos/logo.jpg" width="140px" height="100px">
          
-        <div class="barrabusqueda">
-           <input type="search" placeholder="search here">
-           <span class="fa fa-search"></span>
+        <div class="barrabusqueda-">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="button-barra" type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+            </button>
+          </form>
         </div>
 
         <ul class="hcc">
@@ -39,29 +46,52 @@
     </nav>
 </header>
     <main class="cardsss">
+
+      <div class="card" style="width: 18rem;">
         <img src="../img/img brazos/Biceps en banco.jpg">
-        <p>Banco en Biceps</p>
-        <h3>$578.000</h3>
+        <div class="card-body">
+        <h5 class="card-title">BANCO EN BICEPS</h5>
+        <p class="card-text">$578.000</p>
+        <button class="button-buy"><a href="#">Buy</a></button>
+        </div>
+      </div>
 
-        <img src="../img/img brazos/Press de Hombros.jpg">
-        <p>Press de Hombro</p>
-        <h3>$908.567</h3>
+      <div class="card" style="width: 18rem;">
+          <img src="../img/img brazos/Press de Hombros.jpg">
+          <div class="card-body">
+            <h5 class="card-title">PRESS DE HOMBRO</h5>
+            <p class="card-text">$908.567</p>
+            <button class="button-buy"><a href="#">Buy</a></button>
+          </div>
+      </div>
 
-        <img src="../img/img brazos/Triceps Dip.jpg">
-        <p>Triceps Dip</p>
-        <h3>$367.098</h3>
+      <div class="card" style="width: 18rem;">
+          <img src="../img/img brazos/Triceps Dip.jpg">
+          <div class="card-body">
+            <h5 class="card-title">TRICEPS DIP</h5>
+            <p class="card-text">$367.098</p>
+            <button class="button-buy"><a href="#">Buy</a></button>
+          </div>
+      </div>
+        
+      <div class="card" style="width: 18rem;">
+          <img src="../img/img brazos/Vuelos Laterales.jpg">
+          <div class="card-body">
+            <h5 class="card-title">VUELOS LATERALES</h5>
+            <p class="card-text">$712.456</p>
+            <button class="button-buy"><a href="#">Buy</a></button>
+          </div>
+      </div>
 
-        <img src="../img/img brazos/Vuelos Laterales.jpg">
-        <p>Vuelos Laterales</p>
-        <h3>$712.456</h3>
+      <div class="card" style="width: 18rem;">
+          <img src="../img/img brazos/Optima biceps-triceps.jpg">
+          <div class="card-body">
+            <h5 class="card-title">OPTIMA BICEPS/TRICEPS</h5>
+            <p class="card-text">$345.987</p>
+            <button class="button-buy"><a href="#">Buy</a></button>
+          </div>
+      </div>
 
-        <img src="../img/img brazos/Triceps Horizontal.jpg">
-        <p>Triceps Horizontal</p>
-        <h3>$1.456.987</h3>
-
-        <img src="../img/img brazos/Optima biceps-triceps.jpg">
-        <p>Optima Biceps/Triceps</p>
-        <h3>$345.987</h3>
     </main>
     <footer>
         <div class="redes">

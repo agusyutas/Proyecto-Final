@@ -1,0 +1,43 @@
+.main-carrito{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, auto);
+  }
+  .section-1{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .section-2{
+    background-color: yellow;
+    text-align: center;
+    padding-top: 65px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    grid-column-start: 4;
+    grid-column-end: 7 ;
+    grid-row-start:  3;
+    grid-row-end:  4 ;
+  }
+  .section-3{
+    background-color: yellow;
+    text-align: center;
+    padding-top: 65px;
+    grid-column-start: 4 ;
+    grid-column-end: 7;
+    grid-row-start:4 ;
+    grid-row-end: 5;
+  }
+  .section-4{
+    background-color: black;
+    text-align: center;
+    padding-top: 65px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start:  5;
+    grid-row-end: 6;
+  }

@@ -1,0 +1,446 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.principal- {
+  background-image: url(../img/fondo1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.conteiner-cards {
+  display: flex;
+  padding: 350px;
+  padding-left: 200px;
+  padding-right: 30px;
+}
+
+.card-index {
+  background-color: yellow;
+  text-align: center;
+  margin: 35px;
+  border-radius: 20%;
+}
+
+.card-title {
+  text-align: center;
+  padding: 100px;
+}
+
+.cardsss {
+  background-image: url(../img/fondo-cardsss.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/**RESPONSIVE-INDEX**/
+@media (max-width: 1024px) {
+  footer {
+    margin-top: 120%;
+  }
+  .principal- {
+    background-image: none;
+  }
+  .conteiner-cards {
+    display: flex;
+    flex-direction: column;
+    padding-left: 300px;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    width: 100%;
+    height: 100%;
+  }
+  footer {
+    margin-top: 200%;
+  }
+  .mapa {
+    padding-left: 10px;
+  }
+  .conteiner-cards {
+    display: flex;
+    flex-direction: column;
+    padding-left: 170px;
+  }
+}
+@media (max-width: 425px) {
+  nav {
+    width: 100%;
+    height: 100%;
+  }
+  .barrabusqueda- {
+    display: none;
+  }
+  nav img {
+    width: 100px;
+    height: 80px;
+  }
+  footer {
+    margin-top: 100%;
+  }
+  .email-tel {
+    display: none;
+  }
+  .mapa {
+    display: none;
+  }
+  .conteiner-cards {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 130px;
+  }
+}
+.main-carrito {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, auto);
+}
+
+.section-1 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.section-2 {
+  background-color: yellow;
+  text-align: center;
+  padding-top: 65px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.section-3 {
+  background-color: yellow;
+  text-align: center;
+  padding-top: 65px;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.section-4 {
+  background-color: black;
+  text-align: center;
+  padding-top: 65px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.main-contacto {
+  height: 100vh;
+  text-align: center;
+  padding: 30px;
+  background-image: url(../img/fondocards.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+header nav {
+  display: flex;
+  background-color: yellow;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  text-align: center;
+  padding: 15px 30px;
+  font-family: arial, verdana, sans-serif;
+}
+header nav .barrabusqueda {
+  display: flex;
+  margin: auto 0;
+  height: 35px;
+  line-height: 35px;
+}
+header nav input {
+  border: none;
+  outline: none;
+  background-color: white;
+  height: 100%;
+  padding: 0 10px;
+  font-size: 20px;
+  width: 650px;
+}
+header nav .hcc {
+  display: flex;
+  list-style: none;
+  margin: auto 0;
+}
+header nav .lililinav {
+  margin: 0 2px;
+  padding: 20px;
+}
+header nav a {
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
+
+main {
+  font-family: arial, verdana, sans-serif;
+}
+
+footer {
+  display: flex;
+  background-color: yellow;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  font-family: arial, verdana, sans-serif;
+}
+footer .redes {
+  padding: 50px;
+}
+footer .li-redes {
+  list-style: none;
+  font-size: 25px;
+}
+footer .email-tel {
+  margin-top: 70px;
+}
+footer .t-e {
+  font-size: 25px;
+  list-style: none;
+}
+footer .mapa {
+  width: 350px;
+  height: 200px;
+  margin-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+
+/**TORSO**/
+/**main**/
+.cardsss {
+  display: flex;
+  height: 100vh;
+  padding: 250px;
+  padding-left: 60px;
+}
+.cardsss .card {
+  background-color: yellow;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px;
+}
+.cardsss .card-body {
+  padding: 10px;
+  background-color: yellow;
+  border-radius: 10px;
+  border-color: black;
+}
+.cardsss .card-title {
+  padding: 20px;
+}
+.cardsss .card-text {
+  padding: 20px;
+}
+.cardsss .button-buy {
+  padding: 10px;
+}
+
+/**RESPONSIVE-CARRITO**/
+@media (max-width: 1024px) {
+  .main-carrito {
+    background-image: none;
+  }
+  .hcc {
+    flex-direction: column;
+  }
+  nav .lililinav svg {
+    width: 20px;
+    height: 20px;
+  }
+  .barrabusqueda- {
+    justify-content: center;
+    width: 60px;
+    height: 30px;
+  }
+  .h3 {
+    font-weight: normal;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    width: 100%;
+    height: 100%;
+  }
+  .redes {
+    flex-direction: column;
+    font-size: 20px;
+  }
+  footer .li-redes svg {
+    width: 18px;
+    height: 18px;
+  }
+  .h6 {
+    flex-direction: column;
+  }
+  .mapa {
+    width: 250px;
+    height: 200px;
+    margin-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+  }
+  footer .t-e svg {
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+  }
+  .h3 {
+    font-size: 20px;
+    font-weight: normal;
+  }
+}
+@media (max-width: 425px) {
+  nav {
+    width: 100%;
+    height: 100%;
+  }
+  .barrabusqueda {
+    display: none;
+  }
+  nav img {
+    width: 100px;
+    height: 80px;
+  }
+  footer {
+    margin-top: 100%;
+  }
+  .mapa {
+    display: none;
+  }
+  .section-1 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .section-2 {
+    background-color: yellow;
+    text-align: center;
+    padding-top: 65px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  .section-3 {
+    background-color: yellow;
+    text-align: center;
+    padding-top: 65px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+  .section-4 {
+    background-color: black;
+    text-align: center;
+    padding-top: 65px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+  }
+  .h3 {
+    font-size: 16px;
+  }
+}
+/**RESPONSIVE-CONTACTO**/
+@media (max-width: 1024px) {
+  .barrabusqueda- {
+    display: flex;
+    margin-top: 60px;
+  }
+  .h1-contacto {
+    margin-top: 350px;
+  }
+}
+@media (max-width: 768px) {
+  .barrabusqueda- {
+    display: none;
+  }
+  .mapa {
+    display: none;
+  }
+  .email-tel {
+    padding-right: 20px;
+  }
+  .hcc {
+    display: flex;
+    flex-direction: row;
+  }
+  header nav img {
+    padding-top: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .hcc {
+    display: flex;
+    flex-direction: column;
+  }
+  .redes {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+  }
+}
+/**RESPONSIVE-TORSO**/
+@media (max-width: 1024px) {
+  .barrabusqueda- {
+    height: 40px;
+    width: 20px;
+  }
+  .button-barra {
+    display: none;
+  }
+  nav img {
+    margin-top: 40px;
+    width: 100px;
+    height: 100px;
+  }
+  main {
+    background-image: url(../img/fondo-cardsss.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
