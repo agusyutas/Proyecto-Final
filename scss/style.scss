@@ -5,6 +5,7 @@ $tipografia: arial, verdana, sans-serif;
 @import"./components/cards";
 @import"./layout/carrito";
 @import"./layout/contactos";
+@import"./utilities/boton-estilo";
 
 
 header{
@@ -19,11 +20,14 @@ header{
     text-align: center;
     padding: 15px 30px;
     font-family: $tipografia;
-    .barrabusqueda{
+    .barrabusqueda-{
         display: flex;
-        margin: auto 0;
-        height: 35px;
-        line-height: 35px;
+        margin: 30px;
+    }
+    .button-nav{
+        @include boton;
+        width: 35px;
+        height: 40px;
     }
     input{
         border: none;
@@ -56,6 +60,9 @@ header{
 
 main{
   font-family: $tipografia;
+  .button-buy{
+    @include boton;
+  }
 }
 
 footer{
@@ -105,10 +112,7 @@ footer{
     margin: 20px;
   }
   .card-body{
-    padding: 10px;
-    background-color: yellow;
-    border-radius: 10px;
-    border-color: black;
+    @extend .card;
   }
   .card-title{
     padding: 20px;
@@ -183,7 +187,7 @@ footer{
       width: 100%;
       height: 100%;
   }
-  .barrabusqueda{
+  .barrabusqueda-{
       display: none;
   }
   nav img{
@@ -282,13 +286,6 @@ footer{
 
 /**RESPONSIVE-TORSO**/
 @media(max-width:1024px){
-    .barrabusqueda-{
-        height: 40px;
-        width: 20px;
-    }
-    .button-barra{
-        display: none;
-    }
     nav img{
         margin-top: 40px;
         width: 100px;
@@ -302,4 +299,151 @@ footer{
             height: 100vw;
     
     }
+    .cardsss{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center ;
+    }
+    .card{
+        padding-top: 15px;
+    }
+    .footer-torso{
+        margin-top: 2300px;
+    }
   }
+@media(max-width:768px){
+    .nav-torso{
+        width: 100%;
+        height: 100%;
+    }
+    .hcc{
+        display: flex;
+        flex-direction: column;
+        padding-left: 70px;
+    }
+  }
+@media(max-width:425px){
+    .nav-torso{
+        width: 100vh;
+        height: 100%;
+    }
+    .hcc{
+        padding-left: 90px;
+    }
+    .footer-torso{
+        width: 100vh;
+        height: 100%;
+    }
+    .cardsss{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .redes{
+        margin-left: 50px;
+    }
+}
+
+
+/**RESPONSIVE-ESPALDA**/
+@media(max-width:1024px){
+    .footer-espalda{
+        margin-top: 2300px;
+    }
+}
+@media(max-width:425px){
+    .nav-espalda{
+        width: 100vh;
+        height: 100%;
+    }
+    .footer-espalda{
+        width: 100vh;
+        height: 100%;
+    }
+}
+
+
+/**RESPONSIVE-BRAZOS**/
+@media(max-width:1024px){
+    .footer-brazos{
+        margin-top: 2300px;
+    }
+}
+@media(max-width:425px){
+    .nav-brazos{
+        width: 100vh;
+        height: 100%;
+    }
+    .footer-brazos{
+        width: 100vh;
+        height: 100%;
+    }
+}
+
+
+/**RESPONSIVE-ACCESORIOS**/
+@media(max-width:1024px){
+    .footer-accesorios{
+        margin-top: 2300px;
+    }
+}
+@media(max-width:425px){
+    .footer-accesorios{
+        width: 100vh;
+        height: 100%;
+    }
+    .nav-accesorios{
+        width: 100vh;
+        height: 100%;
+    }
+}
+
+
+/**RESPONSIVE-CONTACTO**/
+@media(max-width:425px){
+    .nav-contacto{
+        width: 100vh;
+        height: 100%;
+    }
+    .footer-contacto{
+        width: 100vh;
+        height: 100%;
+        margin-top: 1200px;
+    }
+}
+
+
+/**RESPONSIVE-CARRITO**/
+@media(max-width:425px){
+    .nav-carrito{
+        width: 100vh;
+        height: 100%;
+    }
+    .footer-carrito{
+        width: 100vh;
+        height: 100%;
+        margin-top: 1200px;
+    }
+}
+
+
+/**RESPONSIVE-TREN INFERIOR**/
+@media(max-width:1024px){
+    .footer-treninferior{
+        margin-top: 2300px;
+        height: 100%;
+        width: 115vh;
+    }
+}
+@media(max-width:768px){
+    .nav-treninferior{
+        width: 115vh;
+        height: 100%;
+    }
+    .footer-treninferior{
+        margin-top: 2300px;
+        height: 100%;
+        width: 115vh;
+    }
+}

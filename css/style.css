@@ -38,8 +38,31 @@
 
 /**RESPONSIVE-INDEX**/
 @media (max-width: 1024px) {
-  footer {
+  .footer-index {
     margin-top: 120%;
+  }
+  .barrabusqueda- {
+    display: flex;
+    padding-top: 45px;
+  }
+  .input-nav {
+    width: 240px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: black;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+  }
+  .btn {
+    padding-left: 4px;
+  }
+  .button-nav {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: 1px;
   }
   .principal- {
     background-image: none;
@@ -51,11 +74,11 @@
   }
 }
 @media (max-width: 768px) {
-  nav {
+  .nav-index {
     width: 100%;
     height: 100%;
   }
-  footer {
+  .footer-index {
     margin-top: 200%;
   }
   .mapa {
@@ -66,10 +89,13 @@
     flex-direction: column;
     padding-left: 170px;
   }
+  .barrabusqueda- {
+    padding-left: 150px;
+  }
 }
 @media (max-width: 425px) {
-  nav {
-    width: 100%;
+  .nav-index {
+    width: 100vh;
     height: 100%;
   }
   .barrabusqueda- {
@@ -79,8 +105,10 @@
     width: 100px;
     height: 80px;
   }
-  footer {
-    margin-top: 100%;
+  .footer-index {
+    margin-top: 1800px;
+    height: 100%;
+    width: 100vh;
   }
   .email-tel {
     display: none;
@@ -172,11 +200,16 @@ header nav {
   padding: 15px 30px;
   font-family: arial, verdana, sans-serif;
 }
-header nav .barrabusqueda {
+header nav .barrabusqueda- {
   display: flex;
-  margin: auto 0;
-  height: 35px;
-  line-height: 35px;
+  margin: 30px;
+}
+header nav .button-nav {
+  background-color: white;
+  text-decoration: black;
+  border-radius: 10px;
+  width: 35px;
+  height: 40px;
 }
 header nav input {
   border: none;
@@ -206,6 +239,11 @@ header nav a {
 
 main {
   font-family: arial, verdana, sans-serif;
+}
+main .button-buy {
+  background-color: white;
+  text-decoration: black;
+  border-radius: 10px;
 }
 
 footer {
@@ -246,17 +284,11 @@ footer .mapa {
   padding: 250px;
   padding-left: 60px;
 }
-.cardsss .card {
+.cardsss .card, .cardsss .card-body {
   background-color: yellow;
   border-radius: 10px;
   text-align: center;
   margin: 20px;
-}
-.cardsss .card-body {
-  padding: 10px;
-  background-color: yellow;
-  border-radius: 10px;
-  border-color: black;
 }
 .cardsss .card-title {
   padding: 20px;
@@ -327,7 +359,7 @@ footer .mapa {
     width: 100%;
     height: 100%;
   }
-  .barrabusqueda {
+  .barrabusqueda- {
     display: none;
   }
   nav img {
@@ -422,13 +454,6 @@ footer .mapa {
 }
 /**RESPONSIVE-TORSO**/
 @media (max-width: 1024px) {
-  .barrabusqueda- {
-    height: 40px;
-    width: 20px;
-  }
-  .button-barra {
-    display: none;
-  }
   nav img {
     margin-top: 40px;
     width: 100px;
@@ -440,6 +465,140 @@ footer .mapa {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vw;
+  }
+  .cardsss {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .card, .cardsss .card-body {
+    padding-top: 15px;
+  }
+  .footer-torso {
+    margin-top: 2300px;
+  }
+}
+@media (max-width: 768px) {
+  .nav-torso {
+    width: 100%;
+    height: 100%;
+  }
+  .hcc {
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+  }
+}
+@media (max-width: 425px) {
+  .nav-torso {
+    width: 100vh;
+    height: 100%;
+  }
+  .hcc {
+    padding-left: 90px;
+  }
+  .footer-torso {
+    width: 100vh;
+    height: 100%;
+  }
+  .cardsss {
+    display: flex;
+    flex-direction: column;
+  }
+  .redes {
+    margin-left: 50px;
+  }
+}
+/**RESPONSIVE-ESPALDA**/
+@media (max-width: 1024px) {
+  .footer-espalda {
+    margin-top: 2300px;
+  }
+}
+@media (max-width: 425px) {
+  .nav-espalda {
+    width: 100vh;
+    height: 100%;
+  }
+  .footer-espalda {
+    width: 100vh;
+    height: 100%;
+  }
+}
+/**RESPONSIVE-BRAZOS**/
+@media (max-width: 1024px) {
+  .footer-brazos {
+    margin-top: 2300px;
+  }
+}
+@media (max-width: 425px) {
+  .nav-brazos {
+    width: 100vh;
+    height: 100%;
+  }
+  .footer-brazos {
+    width: 100vh;
+    height: 100%;
+  }
+}
+/**RESPONSIVE-ACCESORIOS**/
+@media (max-width: 1024px) {
+  .footer-accesorios {
+    margin-top: 2300px;
+  }
+}
+@media (max-width: 425px) {
+  .footer-accesorios {
+    width: 100vh;
+    height: 100%;
+  }
+  .nav-accesorios {
+    width: 100vh;
+    height: 100%;
+  }
+}
+/**RESPONSIVE-CONTACTO**/
+@media (max-width: 425px) {
+  .nav-contacto {
+    width: 100vh;
+    height: 100%;
+  }
+  .footer-contacto {
+    width: 100vh;
+    height: 100%;
+    margin-top: 1200px;
+  }
+}
+/**RESPONSIVE-CARRITO**/
+@media (max-width: 425px) {
+  .nav-carrito {
+    width: 100vh;
+    height: 100%;
+  }
+  .footer-carrito {
+    width: 100vh;
+    height: 100%;
+    margin-top: 1200px;
+  }
+}
+/**RESPONSIVE-TREN INFERIOR**/
+@media (max-width: 1024px) {
+  .footer-treninferior {
+    margin-top: 2300px;
+    height: 100%;
+    width: 115vh;
+  }
+}
+@media (max-width: 768px) {
+  .nav-treninferior {
+    width: 115vh;
+    height: 100%;
+  }
+  .footer-treninferior {
+    margin-top: 2300px;
+    height: 100%;
+    width: 115vh;
   }
 }
 
