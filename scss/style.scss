@@ -1,11 +1,13 @@
 $background:yellow;
 $tipografia: arial, verdana, sans-serif;
 
+
 @import"./base/reset";
 @import"./components/cards";
 @import"./layout/carrito";
 @import"./layout/contactos";
-@import"./utilities/boton-estilo";
+@import "./utilities/boton";
+
 
 
 header{
@@ -20,15 +22,17 @@ header{
     text-align: center;
     padding: 15px 30px;
     font-family: $tipografia;
+    
+    .button-nav{
+        @mixin boton{
+        }
+    }
+
     .barrabusqueda-{
         display: flex;
         margin: 30px;
     }
-    .button-nav{
-        @include boton;
-        width: 35px;
-        height: 40px;
-    }
+
     input{
         border: none;
         outline: none;
@@ -55,14 +59,11 @@ header{
     letter-spacing: 1px;
     padding: 5px 10px;
   }
-  }
+}
 }
 
 main{
   font-family: $tipografia;
-  .button-buy{
-    @include boton;
-  }
 }
 
 footer{
