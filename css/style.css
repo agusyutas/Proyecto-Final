@@ -11,13 +11,6 @@
   height: 100vh;
 }
 
-.conteiner-cards {
-  display: flex;
-  padding: 350px;
-  padding-left: 200px;
-  padding-right: 30px;
-}
-
 .card-index {
   background-color: yellow;
   text-align: center;
@@ -225,7 +218,7 @@ header {
 }
 header nav {
   display: flex;
-  background-color: yellow;
+  background-color: rgb(205, 205, 44);
   width: 100%;
   position: relative;
   justify-content: space-between;
@@ -268,6 +261,7 @@ main {
 }
 
 footer {
+  margin-top: auto;
   display: flex;
   background-color: yellow;
   height: 100%;
@@ -300,7 +294,6 @@ footer .mapa {
 /**TORSO**/
 /**main**/
 .cardsss {
-  display: flex;
   height: 100vh;
   padding: 250px;
   padding-left: 60px;
@@ -474,6 +467,30 @@ footer .mapa {
   }
 }
 /**RESPONSIVE-TORSO**/
+@media (max-width: 1440px) {
+  .cardsss {
+    height: 100vh;
+    padding: 250px;
+    padding-left: 60px;
+    text-align: center;
+    align-items: center;
+  }
+  .footer-torso {
+    margin-top: 150%;
+  }
+  .footer-espalda {
+    margin-top: 150%;
+  }
+  .footer-brazos {
+    margin-top: 150%;
+  }
+  .footer-treninferior {
+    margin-top: 150%;
+  }
+  .footer-accesorios {
+    margin-top: 150%;
+  }
+}
 @media (max-width: 1024px) {
   nav img {
     margin-top: 40px;
@@ -497,7 +514,7 @@ footer .mapa {
     padding-top: 15px;
   }
   .footer-torso {
-    margin-top: 2300px;
+    margin-top: 300%;
   }
 }
 @media (max-width: 768px) {
@@ -510,6 +527,9 @@ footer .mapa {
     flex-direction: column;
     padding-left: 70px;
   }
+  .footer-torso {
+    margin-top: 350%;
+  }
 }
 @media (max-width: 425px) {
   .nav-torso {
@@ -520,12 +540,14 @@ footer .mapa {
     padding-left: 90px;
   }
   .footer-torso {
-    width: 100vh;
     height: 100%;
+    width: 100vh;
+    margin-top: 650%;
   }
   .cardsss {
     display: flex;
     flex-direction: column;
+    margin-left: 60%;
   }
   .redes {
     margin-left: 50px;
@@ -534,7 +556,12 @@ footer .mapa {
 /**RESPONSIVE-ESPALDA**/
 @media (max-width: 1024px) {
   .footer-espalda {
-    margin-top: 2300px;
+    margin-top: 350%;
+  }
+}
+@media (max-width: 768px) {
+  .footer-espalda {
+    margin-top: 350%;
   }
 }
 @media (max-width: 425px) {
@@ -543,6 +570,7 @@ footer .mapa {
     height: 100%;
   }
   .footer-espalda {
+    margin-top: 650%;
     width: 100vh;
     height: 100%;
   }
@@ -566,11 +594,17 @@ footer .mapa {
 /**RESPONSIVE-ACCESORIOS**/
 @media (max-width: 1024px) {
   .footer-accesorios {
-    margin-top: 2300px;
+    margin-top: 350%;
+  }
+}
+@media (max-width: 768px) {
+  .footer-accesorios {
+    margin-top: 350%;
   }
 }
 @media (max-width: 425px) {
   .footer-accesorios {
+    margin-top: 650%;
     width: 100vh;
     height: 100%;
   }
@@ -605,10 +639,14 @@ footer .mapa {
 }
 /**RESPONSIVE-TREN INFERIOR**/
 @media (max-width: 1024px) {
-  .footer-treninferior {
-    margin-top: 2300px;
+  .nav-treninferior {
     height: 100%;
-    width: 115vh;
+    width: 120%;
+  }
+  .footer-treninferior {
+    margin-top: 350%;
+    height: 100%;
+    width: 120%;
   }
 }
 @media (max-width: 768px) {
@@ -617,9 +655,14 @@ footer .mapa {
     height: 100%;
   }
   .footer-treninferior {
-    margin-top: 2300px;
+    margin-top: 350%;
     height: 100%;
     width: 115vh;
+  }
+}
+@media (max-width: 425px) {
+  .footer-treninferior {
+    margin-top: 650%;
   }
 }
 

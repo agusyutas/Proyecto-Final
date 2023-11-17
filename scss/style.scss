@@ -1,4 +1,4 @@
-$background:yellow;
+$background:rgb(205, 205, 44);
 $tipografia: arial, verdana, sans-serif;
 
 
@@ -7,7 +7,6 @@ $tipografia: arial, verdana, sans-serif;
 @import"./layout/carrito";
 @import"./layout/contactos";
 @import "./utilities/boton";
-
 
 
 header{
@@ -67,6 +66,7 @@ main{
 }
 
 footer{
+    margin-top: auto;
     display: flex;
     background-color: yellow;
     height: 100%;
@@ -102,7 +102,6 @@ footer{
 
 /**main**/
   .cardsss{
-  display: flex;
   height: 100vh;
   padding: 250px;
   padding-left: 60px;
@@ -286,6 +285,31 @@ footer{
 
 
 /**RESPONSIVE-TORSO**/
+@media(max-width:1440px){
+    .cardsss{
+        height: 100vh;
+        padding: 250px;
+        padding-left: 60px;
+        text-align: center;
+        align-items: center;
+    }
+    .footer-torso{
+        margin-top: 150%;
+    }
+    .footer-espalda{
+        margin-top: 150%;
+    }
+    .footer-brazos{
+        margin-top: 150%;
+    }
+    .footer-treninferior{
+        margin-top: 150%;
+    }
+    .footer-accesorios{
+        margin-top: 150%;
+    }
+    
+}
 @media(max-width:1024px){
     nav img{
         margin-top: 40px;
@@ -310,7 +334,7 @@ footer{
         padding-top: 15px;
     }
     .footer-torso{
-        margin-top: 2300px;
+        margin-top: 300%;
     }
   }
 @media(max-width:768px){
@@ -323,6 +347,9 @@ footer{
         flex-direction: column;
         padding-left: 70px;
     }
+    .footer-torso{
+        margin-top: 350%;
+    }
   }
 @media(max-width:425px){
     .nav-torso{
@@ -333,12 +360,14 @@ footer{
         padding-left: 90px;
     }
     .footer-torso{
-        width: 100vh;
         height: 100%;
+        width: 100vh;
+        margin-top: 650%;
     }
     .cardsss{
         display: flex;
         flex-direction: column;
+        margin-left: 60%;
         
     }
     .redes{
@@ -350,7 +379,12 @@ footer{
 /**RESPONSIVE-ESPALDA**/
 @media(max-width:1024px){
     .footer-espalda{
-        margin-top: 2300px;
+        margin-top: 350%;
+    }
+}
+@media(max-width:768px){
+    .footer-espalda{
+        margin-top: 350%;
     }
 }
 @media(max-width:425px){
@@ -359,6 +393,7 @@ footer{
         height: 100%;
     }
     .footer-espalda{
+        margin-top: 650%;
         width: 100vh;
         height: 100%;
     }
@@ -386,11 +421,17 @@ footer{
 /**RESPONSIVE-ACCESORIOS**/
 @media(max-width:1024px){
     .footer-accesorios{
-        margin-top: 2300px;
+        margin-top: 350%;
+    }
+}
+@media(max-width:768px){ 
+    .footer-accesorios{
+        margin-top: 350%;
     }
 }
 @media(max-width:425px){
     .footer-accesorios{
+        margin-top: 650%;
         width: 100vh;
         height: 100%;
     }
@@ -431,10 +472,14 @@ footer{
 
 /**RESPONSIVE-TREN INFERIOR**/
 @media(max-width:1024px){
-    .footer-treninferior{
-        margin-top: 2300px;
+    .nav-treninferior{
         height: 100%;
-        width: 115vh;
+        width: 120%;
+    }
+    .footer-treninferior{
+        margin-top: 350%;
+        height: 100%;
+        width: 120%;
     }
 }
 @media(max-width:768px){
@@ -443,8 +488,13 @@ footer{
         height: 100%;
     }
     .footer-treninferior{
-        margin-top: 2300px;
+        margin-top: 350%;
         height: 100%;
         width: 115vh;
+    }
+}
+@media(max-width:425px){
+    .footer-treninferior{
+        margin-top: 650%;
     }
 }
