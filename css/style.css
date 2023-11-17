@@ -218,7 +218,7 @@ header {
 }
 header nav {
   display: flex;
-  background-color: rgb(205, 205, 44);
+  background-color: rgb(255, 247, 0);
   width: 100%;
   position: relative;
   justify-content: space-between;
@@ -259,11 +259,14 @@ header nav a {
 main {
   font-family: arial, verdana, sans-serif;
 }
+main .card-img-top {
+  padding-top: 0.625rem;
+}
 
 footer {
-  margin-top: auto;
+  margin-top: 120%;
   display: flex;
-  background-color: yellow;
+  background-color: rgb(255, 247, 0);
   height: 100%;
   width: 100%;
   justify-content: space-between;
@@ -312,6 +315,7 @@ footer .mapa {
 }
 .cardsss .button-buy {
   padding: 10px;
+  padding-bottom: 0.625rem;
 }
 
 /**RESPONSIVE-CARRITO**/

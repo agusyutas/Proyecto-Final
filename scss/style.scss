@@ -1,4 +1,4 @@
-$background:rgb(205, 205, 44);
+$background:rgb(255, 247, 0);
 $tipografia: arial, verdana, sans-serif;
 
 
@@ -63,12 +63,16 @@ header{
 
 main{
   font-family: $tipografia;
+  .card-img-top{
+    padding-top: .625rem;
+  }
+  
 }
 
 footer{
-    margin-top: auto;
+    margin-top: 120%;
     display: flex;
-    background-color: yellow;
+    background-color: $background;
     height: 100%;
     width: 100%;
     justify-content: space-between;
@@ -122,6 +126,7 @@ footer{
   }
   .button-buy{
    padding: 10px;
+   padding-bottom: .625rem;
   }
  }
  
