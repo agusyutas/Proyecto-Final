@@ -290,6 +290,11 @@ footer{
 
 
 /**RESPONSIVE-TORSO**/
+@media(max-width:2560px){
+  .footer-index{
+    margin-top: 400px;
+  }
+}
 @media(max-width:1440px){
     .cardsss{
         height: 100vh;
