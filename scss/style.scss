@@ -292,7 +292,22 @@ footer{
 /**RESPONSIVE-TORSO**/
 @media(max-width:2560px){
   .footer-index{
-    margin-top: 400px;
+    margin-top: 600px;
+  }
+  .footer-torso{
+    margin-top: 200%;
+  }
+  .footer-espalda{
+    margin-top: 200%;
+  }
+  .footer-brazos{
+    margin-top: 200%;
+  }
+  .footer-treninferior{
+    margin-top: 200%;
+  }
+  .footer-accesorios{
+    margin-top: 200%;
   }
 }
 @media(max-width:1440px){
