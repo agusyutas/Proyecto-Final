@@ -389,6 +389,9 @@ footer{
         width: 100vh;
         margin-top: 650%;
     }
+    .footer-index{
+        margin-top: 650%;
+    }
     .cardsss{
         display: flex;
         flex-direction: column;
@@ -456,7 +459,7 @@ footer{
 }
 @media(max-width:425px){
     .footer-accesorios{
-        margin-top: 650%;
+        margin-top: 800%;
         width: 100vh;
         height: 100%;
     }
