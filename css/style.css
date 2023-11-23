@@ -695,5 +695,10 @@ footer .mapa {
     margin-top: 650%;
   }
 }
+@media (max-width: 375px) {
+  .nav-index {
+    overflow: hidden;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
