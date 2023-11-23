@@ -24,7 +24,7 @@
 /**RESPONSIVE-INDEX**/
 @media(max-width:1024px){
   .footer-index{
-   margin-top: 1300px;
+    margin-top: 1300px;
   }
   .principal-{
     background-image: none;
@@ -75,7 +75,10 @@
        height: 100%;
    }
    .footer-index{
-       margin-top: 230%;
+    margin-top: 230%;
+   }
+   .cardsss{
+    padding-right: 50px;
    }
    .mapa{
        padding-left: 10px;
@@ -95,6 +98,7 @@
 
 
  @media(max-width:425px){
+
   main{
     background-image: none;
   }
@@ -110,10 +114,10 @@
        height: 80px;
    }
    .footer-index{
-       margin-top: 600%;
-       height: 100%;
-       width: 100vh;
-   }
+    margin-top: 600%;
+    height: 100%;
+    width: 100vh;
+}
    .email-tel{
        display: none;
    }
