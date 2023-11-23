@@ -103,6 +103,7 @@
     background-image: none;
   }
   .nav-index {
+    overflow: hidden;
     width: 100vh;
     height: 100%;
   }
@@ -114,6 +115,7 @@
     height: 80px;
   }
   .footer-index {
+    overflow: hidden;
     margin-top: 600%;
     height: 100%;
     width: 100vh;
